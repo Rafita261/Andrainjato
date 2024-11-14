@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  min-width: 100%;  /* Utiliser 100% de la largeur disponible par défaut */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 10px;
+}
+
+/* Ajustements pour les écrans plus petits */
+@media (max-width: 768px) {
+  .App-header {
+    min-width: 100%;  /* Sur les petits écrans, utiliser la largeur complète */
+  }
+}
+
+/* Ajustements pour les écrans très petits (ex. mobile) */
+@media (max-width: 480px) {
+  .App-header {
+    min-width: 100%;  /* Toujours 100% pour s'assurer de la pleine largeur */
+    font-size: calc(8px + 3vmin);  /* Taille de police légèrement plus petite pour les petits écrans */
+  }
+}
+
+/* Ajustements pour les grands écrans */
+@media (min-width: 1200px) {
+  .App-header {
+    min-width: calc(100vmin);  /* Sur les grands écrans, utiliser la largeur basée sur la vue minimum */
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
